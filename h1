@@ -1,10 +1,29 @@
-#h1 Harjoituksen raportti
+# h1 Harjoituksen raportti
 
 Harjoituksen 1 raportin tiivistelmä
 
-## X - Tiivistelmät
+## X - Tiivistelmät (Raportin kirjoittaminen ja FSF)
 
-Tiivistelmät
+Raportin kirjoittaminen:
+
+- Raportti tehdään sekä ulkopuolisia lukijoita, että itseä varten.
+- Raportin on oltava Toistettava. Jos toinen henkilö noudattaa samoja ohjeita, hän päätyy samaan lopputulokseen (ja virheisiin).
+- Raportin on oltava Täsmällinen. Komennot, kellonajat ja työkalut tulee olla tarkasti merkittyinä. Testien tulokset, sekä onnistumiset että epäonnistumiset on syytä merkitä tarkkaan. Vikailmoitusten tarkka
+kopioiminen on välttämätöntä. 
+- Raportin on oltava Helppolukuinen. Huolellinen kieli synnyttää luottamusta lukijassa. Raportissa on hyvä myös muistaa mihin sitä ollaan kirjoittamassa (weppisivulle vs koulun valmiiseen pohjaan).
+- Lähdeviitteet tulee olla selkeästi merkitty (plagiointi on AINA tuomittavaa.)
+
+FSF:
+
+- Ohjelma on vapaa ohjelma, jos nämä neljä ehtoa täyttyvät:
+   - Ohjelmaa saa vapaasti ajaa, mihin tahansa tarkoitukseen,
+   - Ohjelmaa voi tutkia vapaasti ja muokata vapaasti.
+   - Kopioita ohjelmasta voi vapaasti jakaa muiden auttamiseksi ja
+   - Sinun muokkaamaasi versiota ohjelmasta voi jakaa muille.
+- Edellisiin vaaditaan pääsy ohjelman lähdekoodiin.
+- Vapaa tietokoneohjelma ei tarkoita "ei-kaupallista", vaan vapaata ohjelmaa tulee voida käyttää myös kaupallisiin tarkoituksiin.
+
+
 
 ## A - Virtuaalikoneen asennus
 
@@ -22,3 +41,7 @@ Käyttöjärjestelmä: Windows 10 Home 64-bit
 Suosikkiohjelmani
 
 
+## Lähdeviitteet
+
+Karvinen, Tero, saatavilla 25.8.2023: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/
+Free Software Foundation, Inc., saatavilla 25.8.2023: https://www.gnu.org/philosophy/free-sw.html
