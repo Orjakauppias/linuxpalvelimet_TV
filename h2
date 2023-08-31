@@ -8,7 +8,26 @@ tiivistelmä nönnönnöö tekstistä
 
 ## Harjoitukset
 
-Nönnönnöö 
+### a) Micro
+
+31.8.2023, 20.49:
+Harjoitus alkoi micro-editorin (versio 2.0.11) asentamisella githubin kautta. Asentaminen onnistu githubin kautta helposti (katso kuva).
+Tässä kohtaa on syytä mainita, että mitä tahansa ei kannata suoraan githubista saadulla linkillä laittaa koneeseen, vaan aina
+on hyvä jotenkin testata ettei mikään haittaohjelma saastuta konetta. 
+
+![Add file: Upload](DebianVersio.png)
+
+Kuitenkin tämä kyseinen linkki toimi, ja micron asennus sujui joutuisasti.
+
+![Add file: Upload](DebianVersio.png)
+
+
+### b) Rauta
+
+31.8.2023, 21.31:
+Sudo lshw -komennolla sain näkyviin koneen tekniset tiedot. Koneen tekniset tiedot näkyvät kuvakaappauksessa. Itse komento 
+
+![Add file: Upload](DebianVersio.png)
 
 "screenshot
 
