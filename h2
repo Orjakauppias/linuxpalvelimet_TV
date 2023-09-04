@@ -1,4 +1,4 @@
-# h2 Tehtävät
+lla # h2 Tehtävät
 
 Tässä tehtävässä kuvaan komentokehotetehtävän tekemistä
 
@@ -32,10 +32,55 @@ Sudo lshw -komennolla sain näkyviin koneen tekniset tiedot. Koneen tekniset tie
 
 ### c) Apt
 
-3.0.2023, 21.48:
+3.9.2023, 21.48:
+Asensin kolmena komentoriviohjelmana seuraavanlaiset ohjelmat: Googler, CMatrix ja Figlet
+
+Googler yksinkertaisesti antaa hakea terminaalin kautta googlesta tuloksia.
+
+![Add file: Upload](DebianVersio.png)
+
+CMatrix laittaa "The Matrix" - elokuvasta tutun animaation terminaaliin päälle.
+
+![Add file: Upload](DebianVersio.png)
+
+Figlet puolestaan antaa kirjoittaa kuvassa näkyvällä tavalla terminaaliin.
+
+![Add file: Upload](DebianVersio.png)
+
+Komennolla "sudo apt -y install nimi1 nimi2 nimi3" voi asentaa useamman ohjelman kerrallaa.
+
+![Add file: Upload](DebianVersio.png)
+
+
+### d) FHS
+
+4.9.2023, 11:58:
+Hakemisto "/" on ylin kerros ja lähden tässä kohtaa tehtävää avaamaan mitä esimerkkejä sen sisältä löytyy.
+
+Hakemisto "/home/" sisältää tällä hetkellä vain yhden asian, käyttäjän "taco" (minä itse).
+
+![Add file: Upload](DebianVersio.png)
+
+
+Hakemisto "/home/taco/" sisältää
+
+![Add file: Upload](DebianVersio.png)
+
+
+Hakemisto "/etc/" sisältää
 
 
 
-"screenshot
 
-Nönnönnöö
+
+
+
+
+
+
+
+
+
+
+
+
