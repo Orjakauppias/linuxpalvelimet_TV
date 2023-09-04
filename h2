@@ -1,10 +1,15 @@
 lla # h2 Tehtävät
 
-Tässä tehtävässä kuvaan komentokehotetehtävän tekemistä
+Tässä tehtävässä kuvaan komentokehotetehtävien tekemistä. Kirjoitin myös "Command Line Basics Revisited":ä hieman tiivistelmää.
 
 ## Tiivistelmät
 
-tiivistelmä nönnönnöö tekstistä
+Linuxin komennot ovat alkuajoista lähtien olleet se tapa, millä linuxia ohjaillaan komentokehotteen kautta.
+- Ikiaikaisia, ennen googlea ja jopa ennen WWW:tä
+- Erilaisiin tärkeisiin komentoihin sisältyy mm. ls (list files) ja cd (change directory)
+- Tiedostojen käsittelyyn kuuluu myös oikeuksien tarkistelu. Kuka tahansa ei saa käsitellä korkeimmilla oikeuksilla tiedostoja
+
+
 
 ## Harjoitukset
 
@@ -15,19 +20,26 @@ Harjoitus alkoi micro-editorin (versio 2.0.11) asentamisella githubin kautta. As
 Tässä kohtaa on syytä mainita, että mitä tahansa ei kannata suoraan githubista saadulla linkillä laittaa koneeseen, vaan aina
 on hyvä jotenkin testata ettei mikään haittaohjelma saastuta konetta. 
 
-![Add file: Upload](DebianVersio.png)
+![Add file: Upload](a)1SudoApt.png)
 
 Kuitenkin tämä kyseinen linkki toimi, ja micron asennus sujui joutuisasti.
 
-![Add file: Upload](DebianVersio.png)
+![Add file: Upload](a)2GitMicro.png)
 
+![Add file: Upload](a)3MicroInstalled.png)
+
+![Add file: Upload](a)4MicroToimii.png)
 
 ### b) Rauta
 
 31.8.2023, 21.31:
-Sudo lshw -komennolla sain näkyviin koneen tekniset tiedot. Koneen tekniset tiedot näkyvät kuvakaappauksessa. Itse komento 
+Sudo lshw -komennolla sain näkyviin koneen tekniset tiedot. Koneen tekniset tiedot näkyvät kuvakaappauksessa. Itse komento oli "sudo lshw -short -sanitize" kuten ohjeessa määriteltiin. Komennolla koneen rauta 
+on lyhyemmässä muodossa ja kaikki sensitiivinen tieto on piilossa.
 
-![Add file: Upload](DebianVersio.png)
+Kuten kuvasta näkyy komennolla näkyy koneen rauta. Koneesta löytyy isäntäkoneen prosessori ja samat asetukset mitä viime harjoitteessa virtuaalikoneeseen määriteltiin (4gb Ram, 60gb kovalevyn tilaa yms, CDROM-asema.). 
+Lisäksi listauksesta voi huomata virtuaaliset "laitteet" kuten virtanäppäin, kaiutin, hiiren ja näppäimistön. 
+
+![Add file: Upload](b)SudoLshw.png)
 
 
 ### c) Apt
@@ -37,50 +49,79 @@ Asensin kolmena komentoriviohjelmana seuraavanlaiset ohjelmat: Googler, CMatrix 
 
 Googler yksinkertaisesti antaa hakea terminaalin kautta googlesta tuloksia.
 
-![Add file: Upload](DebianVersio.png)
+![Add file: Upload](c)2Googler.png)
 
 CMatrix laittaa "The Matrix" - elokuvasta tutun animaation terminaaliin päälle.
 
-![Add file: Upload](DebianVersio.png)
+![Add file: Upload](c)3Cmatrix.png)
 
 Figlet puolestaan antaa kirjoittaa kuvassa näkyvällä tavalla terminaaliin.
 
-![Add file: Upload](DebianVersio.png)
+![Add file: Upload](c)4Figlet.png)
 
 Komennolla "sudo apt -y install nimi1 nimi2 nimi3" voi asentaa useamman ohjelman kerrallaa.
 
-![Add file: Upload](DebianVersio.png)
+![Add file: Upload](c)5InstallAll.png)
 
 
 ### d) FHS
 
 4.9.2023, 11:58:
-Hakemisto "/" on ylin kerros ja lähden tässä kohtaa tehtävää avaamaan mitä esimerkkejä sen sisältä löytyy.
+Hakemisto "/" on ylin kerros ja lähden tässä kohtaa tehtävää avaamaan mitä esimerkkejä sen sisältä löytyy. Komennoilla "ls" listasin kerroksien sisältöjä (kuvat).
 
 Hakemisto "/home/" sisältää tällä hetkellä vain yhden asian, käyttäjän "taco" (minä itse).
 
-![Add file: Upload](DebianVersio.png)
+![Add file: Upload](d)1HakemistoHome.png)
 
 
-Hakemisto "/home/taco/" sisältää
+Hakemisto "/home/taco/" sisältää esimerkiksi aikaisemmin asennetun tekstieditorin, "micro":n.
 
-![Add file: Upload](DebianVersio.png)
-
-
-Hakemisto "/etc/" sisältää
+![Add file: Upload](d)2HakemistoTaco.png)
 
 
+Hakemisto "/etc/" puolestaan sisältää kaikki järjestelmän yleiset tiedostot tekstitiedostoina. Listalta löytyy muun muassa virtuaalikoneen aikavyöhyke.
+
+![Add file: Upload](d)3HakemistoEtc.png)
+
+
+Hakemisto "/media/" esimerkki sisältää mm. tietokoneen levyaseman, josta tällä hetkellä löytyy Oraclen VirtualBoxin CD.
+
+![Add file: Upload](d)4HakemistoMedia.png)
+
+
+Hakemisto "/var/log/" näyttää yksinkertaisesti järjestelmän lokin.
+
+![Add file: Upload](d)5HakemistoLoki.png)
+
+
+### e) The Friendly M 
+
+4.9.2023, 13.09:
+Grep (Global Regular Expression Print) komennolla on mahdollista etsiä esimerkiksi merkkijonoja Linux-järjestelmästä ja sen sisältämistä tiedostoista.
+
+Valitsin tähän kohtaan 2 esimerkkiä Grep-komennosta, joista molemmat tkevät saman asian, mutta hieman eri skaalassa.
+
+Ensimmäisessä esimerkissä hain grep-komennolla (grep -i "tekstiä" teksti.txt) tarkan sanan tiedostosta. 
+
+![Add file: Upload](e)1GrepTekstiä.png)
+
+
+Toisessa esimerkissä hain hakemiston kaikista tiedostoista grep-komennolla (grep -i -r "tekstiä") tarkan sanan.
+
+![Add file: Upload](e)2GrepLisääTekstiä.png)
+
+### f) Pipe
+
+Tukki-esimerkkinä käytin komentoa "cat teksti.txt | head -7 | tail -4".
+Kyseisessä esimerkissä käytän edellä mainittua komentoa valitsemaan tekstitiedostosta 7 ensimmäistä riviä ja sen jälkeen printtaamaan näistä seitsemästä rivistä viimeiset viisi (5).
+
+![Add file: Upload](f)1TukkiTiedosto.png)
+
+![Add file: Upload](f)2Tukkitulos.png)
 
 
 
 
+## Lähdeviitteet
 
-
-
-
-
-
-
-
-
-
+Karvinen, Tero, saatavilla 31.8.2023: https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited
